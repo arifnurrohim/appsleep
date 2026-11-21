@@ -1,0 +1,27 @@
+# Build output
+build/
+src/build/
+bin/
+
+# Tool downloads
+tools/apktool.jar
+
+# Signing material and credentials
+env
+release.keystore
+release.keystore.b64
+*.keystore
+*.jks
+
+# Local task notes
+notes.txt
+
+# Generated APKs and signatures
+*.apk
+*.idsig
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

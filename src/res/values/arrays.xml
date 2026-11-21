@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dock_colors">
+        <item>Transparent</item>
+        <item>Primary</item>
+    </string-array>
+    <string-array name="history_pages">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last 7 days</item>
+    </string-array>
+    <string-array name="settings_fs_modes">
+        <item>Normal mode</item>
+        <item>Turbo mode</item>
+    </string-array>
+    <string-array name="settings_themes">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>System default</item>
+    </string-array>
+</resources>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_changelog">Changelog</string>
+    <string name="about_copyright">Copyright <big>©</big> 2022, All rights reserved</string>
+    <string name="about_developer">Developer: Depta Paul</string>
+    <string name="about_libraries">Libraries</string>
+    <string name="about_privacy_policy">Privacy policy</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="app_id">ca-app-pub-2917910115436128~4363229682</string>
+    <string name="app_name">AppSleep</string>
+    <string name="auto_fs_adjust_interval">Adjust interval</string>
+    <string name="auto_fs_not_running">Not running</string>
+    <string name="auto_fs_off">OFF</string>
+    <string name="auto_fs_on">ON</string>
+    <string name="auto_fs_on_off_details">Turn ON/OFF the automatic force stop</string>
+    <string name="auto_fs_status">Force stop on every %1s</string>
+    <string name="btn_text_1">DOWNLOAD</string>
+    <string name="btn_text_2">OPEN SHIZUKU</string>
+    <string name="btn_text_3">REQUEST</string>
+    <string name="btn_text_4">DONE</string>
+    <string name="close_drawer">Close navigation menu</string>
+    <string name="close_sheet">Close sheet</string>
+    <string name="common_cancel">CANCEL</string>
+    <string name="common_google_play_services_enable_button">Enable</string>
+    <string name="common_google_play_services_enable_text">"%1$s won't work unless you enable Google Play services."</string>
+    <string name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_install_button">Install</string>
+    <string name="common_google_play_services_install_text">"%1$s won't run without Google Play services, which are missing from your device."</string>
+    <string name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play services availability</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="common_google_play_services_unsupported_text">"%1$s won't run without Google Play services, which are not supported by your device."</string>
+    <string name="common_google_play_services_update_button">Update</string>
+    <string name="common_google_play_services_update_text">"%1$s won't run unless you update Google Play services."</string>
+    <string name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_google_play_services_updating_text">"%1$s won't run without Google Play services, which are currently updating."</string>
+    <string name="common_google_play_services_wear_update_text">New version of Google Play services needed. It will update itself shortly.</string>
+    <string name="common_no_item">No item</string>
+    <string name="common_okay">OKAY</string>
+    <string name="common_open_on_phone">Open on phone</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_error_message">Invalid input</string>
+    <string name="default_popup_window_title">Pop-Up Window</string>
+    <string name="detailed_history_item_details">Stopped: %1d times</string>
+    <string name="dock_color">Dock color</string>
+    <string name="dock_details">Force stop apps using floating button</string>
+    <string name="dock_on_off">Turn ON/OFF</string>
+    <string name="dock_overlay_permission">Overlay permission</string>
+    <string name="dock_overlay_permission_msg">"This app requires draw over other apps permission.
+
+To enable it, click the OKAY button and allow permission for AppSleep."</string>
+    <string name="dock_refresh_on_every">Refresh on every</string>
+    <string name="dropdown_menu">Dropdown menu</string>
+    <string name="faq_ans_1">"If this app doesn't work correctly or can't force stop apps, please do the following things:
+
+1. Make sure that Shizuku is running.
+2. Exit AppSleep properly and reopen it.
+
+If this doesn't work, then email us with your problem. We will do our best to fix that issue ASAP."</string>
+    <string name="faq_ans_2">Force-stopping apps directly are not possible without system API. Shizuku provides something like being a <b>middle man</b> to receive requests from the app, send them to the system server, and send back the results.</string>
+    <string name="faq_ans_3">"Whitelist is the app list where you can add your sensitive apps like antivirus, music player etc.
+
+These apps will be ignored during the force stop operation"</string>
+    <string name="faq_ans_4">"No, you needn't. Purchase status saves on your Google Play address. So, if you use the same Gmail address on your new phone, you needn't purchase it again. Just download AppSleep from Google Play using the same Gmail address. Open AppSleep and click the "<b>UPGRADE</b> button and restore your purchase.</string>
+    <string name="faq_ans_5">"If the premium version is lost and the app doesn't detect your purchase anymore, do the following things:
+➨ Click the "<b>UPGRADE</b>" button from settings.
+➨ Click the "<b>Restore Purchase</b> button.</string>
+    <string name="faq_question_1">Not working?</string>
+    <string name="faq_question_2">Why does the app need the Shizuku app?</string>
+    <string name="faq_question_3">What is the Whitelist?</string>
+    <string name="faq_question_4">Need I purchase AppSleep Premium again for my new device?</string>
+    <string name="faq_question_5">Premium version lost?</string>
+    <string name="feedback_attachments">Attachments</string>
+    <string name="feedback_message">Message</string>
+    <string name="feedback_send">Send</string>
+    <string name="feedback_subject">Subject</string>
+    <string name="history__dialog_btn_clear">CLEAR</string>
+    <string name="history_btn_clear_all">Clear All</string>
+    <string name="history_daily_details">"Get details of %1s's killed history"</string>
+    <string name="history_dialog_msg">"AppSleep clears old history automatically at the time of adding new history. You can also clear it manually.
+
+"<b>Are you sure to clear all history?</b></string>
+    <string name="history_dialog_title">Clear all history</string>
+    <string name="history_today_stopped">Today stopped</string>
+    <string name="home_no_running_apps">No running apps</string>
+    <string name="home_running_apps">Running apps</string>
+    <string name="home_whitelist">Whitelist</string>
+    <string name="in_progress">In progress</string>
+    <string name="indeterminate">Neither checked nor unchecked</string>
+    <string name="navigation_menu">Navigation menu</string>
+    <string name="not_selected">Not selected</string>
+    <string name="notification_auto_fs_msg2">Successfully force stopped %1d apps</string>
+    <string name="notification_auto_fs_msg_1">Please start the Shizuku for auto force stop</string>
+    <string name="notification_auto_fs_title_1">Shizuku is not running</string>
+    <string name="notification_auto_fs_title_2">Automatic force stop</string>
+    <string name="off">Off</string>
+    <string name="offline_notification_text">Tap to open ad</string>
+    <string name="offline_notification_title">View the ad you saved when you were offline</string>
+    <string name="offline_opt_in_confirm">OK</string>
+    <string name="offline_opt_in_confirmation">"You'll get a notification with the link when you're back online"</string>
+    <string name="offline_opt_in_decline">No thanks</string>
+    <string name="offline_opt_in_message">"We'll send you a notification with a link to the advertiser site."</string>
+    <string name="offline_opt_in_title">"Open ad when you're back online."</string>
+    <string name="on">On</string>
+    <string name="other_apps_any_link">AnyLink</string>
+    <string name="other_apps_any_link_description">Save links into this link organizer and access them whenever you want.</string>
+    <string name="other_apps_app_driver">AppDriver</string>
+    <string name="other_apps_app_driver_description">AppDriver is an intelligent app manager that lets you manage apps easily, quickly, and efficiently.</string>
+    <string name="other_apps_app_red_ping">Red Ping</string>
+    <string name="other_apps_appkiller">AppKiller</string>
+    <string name="other_apps_appkiller_description">Force-stop all running apps by a single press</string>
+    <string name="other_apps_auto_close">Auto Close</string>
+    <string name="other_apps_auto_close_description">AutoClose lets you release the memory of running apps automatically when you lock your device.</string>
+    <string name="other_apps_red_ping_description">A real-time ping test tool that helps you to identify the packet loss.</string>
+    <string name="other_apps_zero_cleaner">Zero Cleaner</string>
+    <string name="other_apps_zero_cleaner_description">Clear cache of all apps to free up the device storage by a single press.</string>
+    <string name="permission_desc_1">Force-stopping apps directly are not possible without system API. Shizuku provides something like being a <b>middle man</b>" to receive requests from the app, send them to the system server, and send back the results.
+
+To install it, please click the "<b>DOWNLOAD</b> button from below.</string>
+    <string name="permission_desc_2">"You need to complete the pairing process in the Shizuku app. After that, please start the Shizuku.
+
+For more details, please view the "<b>step-by-step guide</b> in the Shizuku app.</string>
+    <string name="permission_desc_3">Please click the <b>REQUEST</b> button below and allow permission for the AppSleep.</string>
+    <string name="permission_desc_4">"Congratulations, you are ready to go.
+
+If you are using Shizuku in "<b>wireless debugging</b> mode, please remember to do the same things again if you <b>restart your device</b>.</string>
+    <string name="permission_title_1">Please install \"Shizuku\" first</string>
+    <string name="permission_title_2">Please start the \"Shizuku\"</string>
+    <string name="permission_title_3">Allow the permission</string>
+    <string name="permission_title_4">Successful!</string>
+    <string name="range_end">Range end</string>
+    <string name="range_start">Range start</string>
+    <string name="s1">Save image</string>
+    <string name="s2">Allow Ad to store image in Picture gallery?</string>
+    <string name="s3">Accept</string>
+    <string name="s4">Decline</string>
+    <string name="s5">Create calendar event</string>
+    <string name="s6">Allow Ad to create a calendar event?</string>
+    <string name="s7">Test Ad</string>
+    <string name="selected">Selected</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_automatic_force_stop">Automatic force stop</string>
+    <string name="settings_automatic_force_stop_details">Force stop apps automatically</string>
+    <string name="settings_device_lock">Device lock</string>
+    <string name="settings_device_lock_details">Force-stop apps when you lock your device</string>
+    <string name="settings_dock">Dock</string>
+    <string name="settings_dock_details">One-tap force stop with dock</string>
+    <string name="settings_floating_dock">Floating dock</string>
+    <string name="settings_others">Others</string>
+    <string name="settings_quick_force_stop">Quick Force stop</string>
+    <string name="settings_theme">Theme</string>
+    <string name="startup_bani">AppSleep <b>force stops</b> all running apps from the background, saves <b>battery power</b> and improves device performance.</string>
+    <string name="startup_get_started">GET STARTED</string>
+    <string name="startup_policy_text_1">By proceeding, you confirm you accept</string>
+    <string name="startup_policy_text_2">"AppSleep's "</string>
+    <string name="startup_policy_text_3">Privacy Policy</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="support_good">Good</string>
+    <string name="support_great">Great</string>
+    <string name="support_little">Little</string>
+    <string name="support_pay_what_you_can">Pay what you can</string>
+    <string name="support_thank_you">Thank you!</string>
+    <string name="support_thank_you_for_your_support">Thank you for your support!</string>
+    <string name="support_thank_you_msg">Thank you so much for your support and love! Your support always makes us inspired. Have a great day!</string>
+    <string name="support_unlock_msg">Unlocks all premium features.</string>
+    <string name="tab">Tab</string>
+    <string name="template_percent">%1$d percent.</string>
+    <string name="title_about">About</string>
+    <string name="title_add_to_white_list">Add to whitelist</string>
+    <string name="title_auto_fs">Auto force stop</string>
+    <string name="title_changelog">Changelog</string>
+    <string name="title_dock">Dock</string>
+    <string name="title_empty" />
+    <string name="title_faq">FAQ</string>
+    <string name="title_feedback">Feedback</string>
+    <string name="title_force_stop">Force stopping</string>
+    <string name="title_history">History</string>
+    <string name="title_home">Home</string>
+    <string name="title_libraries">Libraries</string>
+    <string name="title_other_apps">Other apps</string>
+    <string name="title_running_apps">Running apps</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_setup">Setup</string>
+    <string name="title_support">Support</string>
+    <string name="title_upgrade">Upgrade</string>
+    <string name="title_whitelist">Whitelist</string>
+    <string name="upgrade">UPGRADE</string>
+    <string name="upgrade_automatic_force_stop">Automatic force-stop</string>
+    <string name="upgrade_automatic_force_stop_description">"Automatic force-stop helps you to force-stop apps periodically without any instruction. You needn't press the force-stop button again and again."</string>
+    <string name="upgrade_btn_purchase">PURCHASE</string>
+    <string name="upgrade_btn_restore">RESTORE</string>
+    <string name="upgrade_device_lock_force_stop">Device lock force-stop</string>
+    <string name="upgrade_device_lock_force_stop_description">Force-stop all running apps when you lock your device.</string>
+    <string name="upgrade_floating_dock">Floating dock</string>
+    <string name="upgrade_floating_dock_description">You can force-stop all running apps when you press the floating dock from anywhere.</string>
+    <string name="upgrade_no_ads">No Ads</string>
+    <string name="upgrade_no_ads_description">No more ads. Enjoy an ad-free experience. A fresh ads-free UI will make your experience better.</string>
+    <string name="upgrade_one_time_purchase">One-time purchase</string>
+    <string name="upgrade_premium">AppSleep Premium</string>
+    <string name="upgrade_quick_force_stop">Quick force-stop</string>
+    <string name="upgrade_quick_force_stop_description">Force-stop apps more quickly without any delay. You can select Turbo Mode in settings.</string>
+    <string name="upgrade_restore_successful">Successful</string>
+    <string name="upgrade_restore_successful_msg">Purchase restored successfully. Enjoy AppSleep Premium. Have a great day!</string>
+    <string name="upgrade_successful">Congratulations</string>
+    <string name="upgrade_successful_msg">You have unlocked all premium features. Enjoy AppSleep Premium. Have a great day!</string>
+    <string name="whitelist_information">Information</string>
+    <string name="whitelist_information_details">"Whitelist is the app list where you can add your sensitive apps like antivirus, music player etc.
+
+"<b>These apps will be ignored during the force stop operation</b></string>
+    <string name="whitelist_select_an_app">Select an app</string>
+</resources>

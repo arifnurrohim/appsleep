@@ -1,0 +1,32 @@
+.class public final Lt5/dm0;
+.super Lt5/qn0;
+.source "SourceFile"
+
+# interfaces
+.implements Lt5/fm0;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/Set;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Lt5/qn0;-><init>(Ljava/util/Set;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final x(Lt5/cj0;)V
+    .locals 2
+
+    new-instance v0, Lt5/l9;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p1, v1}, Lt5/l9;-><init>(Ljava/lang/Object;I)V
+
+    invoke-virtual {p0, v0}, Lt5/qn0;->a0(Lt5/pn0;)V
+
+    return-void
+.end method

@@ -1,0 +1,110 @@
+.class public final Lk5/l$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lk5/l;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<A:",
+        "Ljava/lang/Object;",
+        "ResultT:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Lk5/k;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk5/k<",
+            "TA;",
+            "Lf6/h<",
+            "TResultT;>;>;"
+        }
+    .end annotation
+.end field
+
+.field public b:Z
+
+.field public c:[Li5/d;
+
+.field public d:I
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lk5/l$a;->b:Z
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lk5/l$a;->d:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lk5/l;
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk5/l<",
+            "TA;TResultT;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lk5/l$a;->a:Lk5/k;
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    new-instance v0, Lk5/k0;
+
+    iget-object v1, p0, Lk5/l$a;->c:[Li5/d;
+
+    iget-boolean v2, p0, Lk5/l$a;->b:Z
+
+    iget v3, p0, Lk5/l$a;->d:I
+
+    invoke-direct {v0, p0, v1, v2, v3}, Lk5/k0;-><init>(Lk5/l$a;[Li5/d;ZI)V
+
+    return-object v0
+
+    :cond_1
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "execute parameter required"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method

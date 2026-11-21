@@ -1,0 +1,105 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+  KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+  KEY_ALIAS: ${{ secrets.KEY_ALIAS || 'applistbackup' }}
+  KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || secrets.KEYSTORE_PASSWORD }}
+
+jobs:
+  release:
+    name: Build and publish release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+
+      - name: Set up Java
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: "platforms;android-32 build-tools;35.0.0"
+
+      - name: Set up build tools
+        run: |
+          curl -fsSL -o tools/apktool.jar \
+            https://github.com/iBotPeaches/Apktool/releases/download/v2.9.3/apktool_2.9.3.jar
+          echo "$ANDROID_HOME/build-tools/35.0.0" >> "$GITHUB_PATH"
+
+      - name: Set release version
+        run: |
+          VERSION_NAME="${GITHUB_REF_NAME#v}"
+          if ! [[ "$VERSION_NAME" =~ ^[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+            echo "Invalid release tag: $GITHUB_REF_NAME" >&2
+            exit 1
+          fi
+          IFS=. read -r MAJOR MINOR PATCH <<< "$VERSION_NAME"
+          PATCH="${PATCH:-0}"
+          VERSION_CODE=$((10#$MAJOR * 10000 + 10#$MINOR * 100 + 10#$PATCH))
+          sed -i "s/^[[:space:]]*versionCode:.*/  versionCode: $VERSION_CODE/" src/apktool.yml
+          chmod +x tools/set-version.sh
+          ./tools/set-version.sh "$VERSION_NAME"
+          echo "VERSION_NAME=$VERSION_NAME" >> "$GITHUB_ENV"
+          echo "VERSION_CODE=$VERSION_CODE" >> "$GITHUB_ENV"
+
+      - name: Build signed APK
+        run: |
+          if [ -z "$KEYSTORE_BASE64" ] || [ -z "$KEYSTORE_PASSWORD" ]; then
+            echo "KEYSTORE_BASE64 and KEYSTORE_PASSWORD secrets are required" >&2
+            exit 1
+          fi
+          printf '%s' "$KEYSTORE_BASE64" | base64 -d > release.keystore
+          export KEYSTORE=release.keystore
+          export STORE_PASS="$KEYSTORE_PASSWORD"
+          export KEY_PASS="${KEY_PASSWORD:-$KEYSTORE_PASSWORD}"
+          export KEY_ALIAS="${KEY_ALIAS:-applistbackup}"
+          export APKTOOL_JAR="$PWD/tools/apktool.jar"
+          chmod +x tools/build.sh
+          ./tools/build.sh
+          apksigner verify --print-certs "build/AppSleep-$VERSION_NAME.apk"
+          test -s "build/AppSleep-$VERSION_NAME.apk"
+
+      - name: Prepare release assets
+        run: |
+          cd build
+          sha256sum "AppSleep-$VERSION_NAME.apk" > "AppSleep-$VERSION_NAME.apk.sha256"
+          cd ..
+          awk -v ver="$VERSION_NAME" '
+            $0 ~ "^## \\[" ver "\\]" { printing = 1; next }
+            /^## \[/ { printing = 0 }
+            printing
+          ' CHANGELOG.md > release-notes.md
+          if [ ! -s release-notes.md ]; then
+            echo "Release $VERSION_NAME" > release-notes.md
+          fi
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: AppSleep-${{ github.ref_name }}
+          path: |
+            build/AppSleep-*.apk
+            build/*.sha256
+          if-no-files-found: error
+
+      - name: Publish GitHub release
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "build/AppSleep-$VERSION_NAME.apk" \
+            "build/AppSleep-$VERSION_NAME.apk.sha256" \
+            --title "AppSleep $VERSION_NAME" \
+            --notes-file release-notes.md
