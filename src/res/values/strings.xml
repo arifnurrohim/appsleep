@@ -2,7 +2,9 @@
 <resources>
     <string name="about_changelog">Changelog</string>
     <string name="about_copyright">Copyright <big>©</big> 2022, All rights reserved</string>
+    <string name="about_creator">Fork creator: arifnurrohim.my.id</string>
     <string name="about_developer">Developer: Depta Paul</string>
+    <string name="about_github">GitHub: arifnurrohim/appsleep</string>
     <string name="about_libraries">Libraries</string>
     <string name="about_privacy_policy">Privacy policy</string>
     <string name="androidx_startup">androidx.startup</string>

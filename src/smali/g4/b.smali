@@ -53,7 +53,7 @@
 
     check-cast v2, Lcom/dp/appsleep/view/model/AboutViewModel;
 
-    const/4 v3, 0x4
+    const/4 v3, 0x6
 
     new-array v3, v3, [Lg4/a;
 
@@ -114,6 +114,42 @@
     const v7, 0x7f0e0002
 
     sget-object v8, Lg4/b$h;->p:Lg4/b$h;
+
+    invoke-direct {v4, v6, v7, v8}, Lg4/a;-><init>(IILh7/a;)V
+
+    aput-object v4, v3, v2
+
+    const/4 v2, 0x4
+
+    new-instance v4, Lg4/a;
+
+    const v6, 0x7f08002c
+
+    const v7, 0x7f0e00be
+
+    new-instance v8, Lapp/arifnurrohim/appsleep/about/AboutLinkHandler;
+
+    const-string v9, "https://github.com/arifnurrohim/appsleep"
+
+    invoke-direct {v8, v9}, Lapp/arifnurrohim/appsleep/about/AboutLinkHandler;-><init>(Ljava/lang/String;)V
+
+    invoke-direct {v4, v6, v7, v8}, Lg4/a;-><init>(IILh7/a;)V
+
+    aput-object v4, v3, v2
+
+    const/4 v2, 0x5
+
+    new-instance v4, Lg4/a;
+
+    const v6, 0x7f080029
+
+    const v7, 0x7f0e00bd
+
+    new-instance v8, Lapp/arifnurrohim/appsleep/about/AboutLinkHandler;
+
+    const-string v9, "https://arifnurrohim.my.id"
+
+    invoke-direct {v8, v9}, Lapp/arifnurrohim/appsleep/about/AboutLinkHandler;-><init>(Ljava/lang/String;)V
 
     invoke-direct {v4, v6, v7, v8}, Lg4/a;-><init>(IILh7/a;)V
 
@@ -468,7 +504,7 @@
 
     const-wide/16 v49, 0x0
 
-    const-string v36, "Version: 1.2"
+    const-string v36, "Version: 1.3"
 
     move-object/from16 v56, v1
 

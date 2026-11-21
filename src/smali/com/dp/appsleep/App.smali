@@ -21,6 +21,8 @@
 
     invoke-static {p0}, Lapp/arifnurrohim/appsleep/backup/WhitelistBackupHelper;->init(Landroid/content/Context;)V
 
+    invoke-static {p0}, Lapp/arifnurrohim/appsleep/about/LinkOpener;->init(Landroid/content/Context;)V
+
     invoke-static {p0}, Lapp/arifnurrohim/appsleep/backup/WhitelistBackupHelper;->applyPendingRestore(Landroid/content/Context;)V
 
     const-string v0, "notification"

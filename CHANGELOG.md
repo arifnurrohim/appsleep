@@ -2,6 +2,18 @@
 
 All notable changes to this personal AppSleep fork are documented here.
 
+## [1.3] - 2026-11-22
+
+### Added
+
+- About links to the GitHub repository and the fork creator website.
+- Fork creator link: https://arifnurrohim.my.id
+
+### Changed
+
+- Backup and restore is now available only under **Settings → Backup & restore**.
+- The dashboard backup shortcut was replaced with the app package label `app.arifnurrohim.appsleep`.
+
 ## [1.2] - 2026-11-21
 
 ### Added

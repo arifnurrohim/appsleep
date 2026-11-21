@@ -1484,21 +1484,9 @@
 
     invoke-static {v10, v11}, Landroidx/compose/ui/platform/u;->D(Ll0/j;F)Ll0/j;
 
-    move-result-object v10
-
-    new-instance v12, Lapp/arifnurrohim/appsleep/backup/LaunchBackupHandler;
-
-    invoke-direct {v12}, Lapp/arifnurrohim/appsleep/backup/LaunchBackupHandler;-><init>()V
-
-    const/4 v13, 0x7
-
-    const/4 v14, 0x0
-
-    invoke-static {v10, v14, v12, v13}, Ll/n;->d(Ll0/j;ZLh7/a;I)Ll0/j;
-
     move-result-object v3
 
-    const-string v2, "Backup & restore whitelist"
+    const-string v2, "app.arifnurrohim.appsleep"
 
     invoke-static/range {v65 .. v65}, Lk/n;->f(I)J
 

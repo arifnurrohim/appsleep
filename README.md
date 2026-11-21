@@ -8,8 +8,9 @@ This is an unofficial personal build and is not affiliated with the original App
 
 - Force-stop background apps through Shizuku.
 - Maintain an app whitelist that is never force-stopped.
-- Back up the whitelist to an XML file from **Settings → Backup & restore** or the home screen entry.
+- Back up the whitelist to an XML file from **Settings → Backup & restore**.
 - Restore a whitelist from a previously saved XML file.
+- About screen links to the GitHub repository and the fork creator website.
 - Ad-free interface with a simplified drawer and the unused dock service removed.
 - Premium UI enabled for this personal build.
 

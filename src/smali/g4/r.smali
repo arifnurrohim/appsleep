@@ -243,7 +243,7 @@
     .line 5
     iget-object v4, v1, Lg4/p;->a:Ljava/lang/String;
 
-    const-string v5, "1.2"
+    const-string v5, "1.3"
 
     .line 6
     invoke-static {v5, v4}, Li7/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
