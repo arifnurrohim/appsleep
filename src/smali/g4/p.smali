@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v0, "1.3"
+    const-string v0, "1.4"
 
     iput-object v0, p0, Lg4/p;->a:Ljava/lang/String;
 

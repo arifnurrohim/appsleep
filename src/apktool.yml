@@ -12,8 +12,8 @@ packageInfo:
   forcedPackageId: 127
   renameManifestPackage: app.arifnurrohim.appsleep
 versionInfo:
-  versionCode: 10300
-  versionName: 1.3
+  versionCode: 10400
+  versionName: 1.4
 resourcesAreCompressed: false
 sharedLibrary: false
 sparseResources: false

@@ -504,7 +504,7 @@
 
     const-wide/16 v49, 0x0
 
-    const-string v36, "Version: 1.3"
+    const-string v36, "Version: 1.4"
 
     move-object/from16 v56, v1
 

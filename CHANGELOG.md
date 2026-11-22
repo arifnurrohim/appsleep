@@ -2,6 +2,15 @@
 
 All notable changes to this personal AppSleep fork are documented here.
 
+## [1.4] - 2026-11-22
+
+### Changed
+
+- Removed the dashboard package label.
+- Renamed the About GitHub link to `github repository`.
+- Renamed the About fork creator link to `Forked by : arifnurrohim`.
+- Bumped version to `1.4`.
+
 ## [1.3] - 2026-11-22
 
 ### Added

@@ -25,7 +25,7 @@
 
     iput-object p1, p0, Lcom/dp/appsleep/view/model/FeedbackViewModel;->c:Landroid/app/Application;
 
-    const-string p1, "App: AppSleep\nVersion: 1.3\nModel: "
+    const-string p1, "App: AppSleep\nVersion: 1.4\nModel: "
 
     .line 1
     invoke-static {p1}, Landroidx/activity/result/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;

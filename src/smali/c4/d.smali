@@ -950,7 +950,7 @@
 
     const/16 v51, 0x7ff8
 
-    const-string v28, "Version: 1.3"
+    const-string v28, "Version: 1.4"
 
     move-object/from16 v48, v3
 
